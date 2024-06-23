@@ -40,13 +40,13 @@ namespace API.Controllers
             return Ok(productsbrands);
             
         }
-        [HttpGet("types")]
+        
+      [HttpGet("types")]
         public async Task<ActionResult<ProductType>> GetProductTypes()
         {
             var prodcuttypes = await _repo.GetProductsTypeAsync();
             return Ok(prodcuttypes);
         }
-
         
     }
 }
