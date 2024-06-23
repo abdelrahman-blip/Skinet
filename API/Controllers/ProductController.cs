@@ -41,12 +41,6 @@ namespace API.Controllers
             
         }
         
-      [HttpGet("types")]
-        public async Task<ActionResult<ProductType>> GetProductTypes()
-        {
-            var prodcuttypes = await _repo.GetProductsTypeAsync();
-            return Ok(prodcuttypes);
-        }
-        
+  
     }
 }
